@@ -1,6 +1,6 @@
 # 🌐 Aryan Soni's Portfolio
 
-🚀 **Live Portfolio:** [Click Here](YOUR_PORTFOLIO_LINK)
+# 🚀 Live Portfolio: [Click Here](https://aryansoni00.github.io/Portfolio/)
 
 ---
 
