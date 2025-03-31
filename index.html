@@ -56,11 +56,15 @@
 						I'm a third-year student at UPES with a strong foundation in web development, skilled in building fully responsive
 						websites and handling both front-end and back-end functionalities with expertise in Cloud Computing.
 					</p>
-					<button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">Hire Me</button>
+					<a href="mailto:aryan151soni@gmail.com?subject=Job%20Opportunity" style="text-decoration: none;">
+						<button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">Hire Me</button>
+					</a>
 					<a href="" class="link ms-4 d-none">See My Work</a>
 				</div>
-				<div class="col-10 col-md-4 d-none d-md-block">
-
+				<div class="col-10 col-md-4 d-none d-md-block" data-aos="slide-left">
+                    <div class="profile-image-container">
+                        <img src="images/profile.jpg" alt="Aryan Soni" class="profile-image">
+                    </div>
 				</div>
 			</div>
 		</section>
@@ -348,6 +352,40 @@
                 .btn:hover {
                   background: #e81cff;
                   transform: scale(1.1);
+                }
+
+                .profile-image-container {
+                    position: relative;
+                    width: 100%;
+                    max-width: 400px;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    border-radius: 20px;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+                }
+
+                .profile-image {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    transition: transform 0.3s ease-in-out;
+                }
+
+                .profile-image-container::before {
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+                    opacity: 0.2;
+                    transition: opacity 0.3s ease-in-out;
+                }
+
+                .profile-image-container:hover::before {
+                    opacity: 0.3;
+                }
+
+                .profile-image-container:hover .profile-image {
+                    transform: scale(1.05);
                 }
               </style>
 
